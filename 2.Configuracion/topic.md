@@ -64,3 +64,5 @@ Algunas configuraciones más interesantes que se pueden aplicar por topic son la
 
 La lista completa de configuración por topic se pueden encontrar en el siguiente enlace:
 [Configuración a nivel de topic](http://kafka.apache.org/documentation.html#topic-config).
+
+cleanup.policy=compact

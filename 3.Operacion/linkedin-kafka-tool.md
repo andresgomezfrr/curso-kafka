@@ -72,10 +72,10 @@ optional arguments:
                        Path to Kafka admin utilities, overriding PATH env var
 ```
 
-Teniendo únicamente dos brokers vamos a crear un topic con 20 particiones:
+Vamos a crear un topic con 30 particiones:
 
 ```
-bin/kafka-topics.sh --create --partitions 20 --topic test01 --replication-factor 1 --zookeeper localhost
+bin/kafka-topics.sh --create --partitions 30 --topic test01 --replication-factor 1 --zookeeper localhost
 ```
 
 Si ejecutamos un *describe* del topic veremos que las particiones estan distribuidas entre el broker0 y el broker1.
