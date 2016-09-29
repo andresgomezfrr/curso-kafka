@@ -1,4 +1,4 @@
-1. Si quisieramos cambiar la dirección del puerto donde ofrece el servicio el broker deberiamos modificar la propiedad:
+1. Si quisiéramos cambiar la dirección del puerto donde ofrece el servicio el broker deberíamos modificar la propiedad:
   * advertised.port
   * listeners
   * advertised.listeners

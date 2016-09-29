@@ -16,7 +16,7 @@
   * Una por cada cliente.
   * Ninguna de las anteriores.
 
-4. ¿El certificado del CA donde se almacena?
+4. ¿El certificado del CA dónde se almacena?
   * truststore del broker.
   * keystore de todos los brokers.
   * keystore del broker.
@@ -40,7 +40,7 @@
   *  **Keystore:** CA-Cert
   *  No necesitamos nada.
 
-8. Como podemos configurar en un broker varios metodos de conexión:
+8. Cómo podemos configurar en un broker varios métodos de conexión:
   * No es posible configurar varios metodos de conexión.
   * Usando la propiedad **advertised.listeners**.
   * Usando la propiedad **listeners**.

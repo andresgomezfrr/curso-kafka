@@ -21,7 +21,7 @@ Existen varios serializadores ya implementados:
 
 Si se desea implementar uno propio se debe utilizar la interfaz:[org.apache.kafka.common.serialization.Serializer](https://github.com/apache/kafka/blob/trunk/clients/src/main/java/org/apache/kafka/common/serialization/Serializer.java)
 
-Hay varias propiedaded que resultan de interes en el productor y son las siguientes:
+Hay varias propiedades que resultan de interés en el productor y son las siguientes:
 
 | Propiedad     | Descripción     |
 | :------------- | :------------- |

@@ -4,13 +4,13 @@
   * kafka-clients
   * apache-kafka
 
-2. Cuando se crea un JAR con un proyecto con maven utilizamos el comando:
+2. Cuando se crea un JAR con un proyecto con maven, utilizamos el comando:
   * mvn package
   * maven package
   * mvn compile
   * maven compile
 
-3. ¿Qué clase se utiliza para crear un nuevo mensaje para su envio?
+3. ¿Qué clase se utiliza para crear un nuevo mensaje para su envío?
   * ProducerRecord
   * KafkaMessage
   * KafkaRecord

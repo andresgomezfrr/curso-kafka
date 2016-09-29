@@ -45,7 +45,7 @@
   * Depende del número de las particiones que se van a replicar.
 
 8. Los mensajes en Kafka esan formado principalmente por ...
-  * Unicamente un payload, ya que es lo que se envia al broker, la clave sola es usada para particionar.
+  * Únicamente un payload, ya que es lo que se envía al broker, la clave sola es usada para particionar.
   * Una clave y un payload.
   * Ninguna de las anteriores es correcta.
   * Un timestamp, una clave y un payload.
@@ -66,10 +66,10 @@
   * La afirmación es correcta.
   * Depende del particionado que se este utilizando.
   * Depende de en que broker se encuentra la partición.
-  * La afirmación es correcta siempre que unicamente exista un cliente produciendo esa clave.
+  * La afirmación es correcta siempre que únicamente exista un cliente produciendo esa clave.
 
 12. En un cluster:
-  * Se deberian de tener tantos servidores de ZooKeeper como brokers.
+  * Se deberían de tener tantos servidores de ZooKeeper como brokers.
   * Los brokers pueden tener indentificadores iguales.
   * Siempre hay que tener un número impar de brokers.
   * Ninguna es correcta.

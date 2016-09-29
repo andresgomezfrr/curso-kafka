@@ -15,7 +15,7 @@ Una vez hemos instalado el gestor ya podemos instalar el paquete de utilidades d
 pip install kafka-tools
 ```
 
-Una vez instalado ya podriamos utilizar la herramienta **kafka-assigner**, aunque puede ser necesario tener que exportar la variable de entorno JAVA_HOME si no esta exportada.
+Una vez instalado ya podríamos utilizar la herramienta **kafka-assigner**, aunque puede ser necesario tener que exportar la variable de entorno JAVA_HOME si no esta exportada.
 
 ```
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.102-1.b14.el7_2.x86_64/jre/
