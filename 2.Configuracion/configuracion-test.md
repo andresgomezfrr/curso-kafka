@@ -1,4 +1,4 @@
-1. Si quisieramos cambiar la dirección del puerto donde ofrece el servicio el broker deberiamos modificar la propiedad:
+1. Si quisiéramos cambiar la dirección del puerto donde ofrece el servicio el broker deberíamos modificar la propiedad:
   * advertised.port
   * listeners
   * advertised.listeners
@@ -11,13 +11,13 @@
   * Numero de mensajes
 
 3. La propiedad **log.segment.bytes** es utilizada para:
-  * Indicar el número maximo de bytes que se almacenan de una partición entre todos los ficheros de logs.
+  * Indicar el número máximo de bytes que se almacenan de una partición entre todos los ficheros de logs.
   * Indicar el tamaño máximo de un fichero de log.
   * Indicar el tamaño máximo de un topic.
   * Ninguna de las anteriores.
 
 4. La propiedad **log.retention.bytes** es utilizada para:
-  * Indicar el número maximo de bytes que se almacenan de una partición entre todos los ficheros de logs.
+  * Indicar el número máximo de bytes que se almacenan de una partición entre todos los ficheros de logs.
   * Indicar el tamaño máximo de un fichero de log.
   * Indicar el tamaño máximo de un topic.
   * Ninguna de las anteriores.
@@ -40,7 +40,7 @@
 * zookeeper.server, key.serializer, value.serializer
 * zookeeper.server, key.deserializer, value.deserializer
 
-8. Si quisieramos que el broker nos devuelva el asentimiento cuando la partición haya escrito el mensaje debemos configurar:
+8. Si quisiéramos que el broker nos devuelva el asentimiento cuando la partición haya escrito el mensaje debemos configurar:
   * La propiedad **ack** con valor **all**.
   * La propiedad **ack** con valor **1**.
   * La propiedad **ack** con valor **0**.
@@ -58,9 +58,9 @@
   * La clave y la información del cluster.
   * El topic, la clave, el valor y la información del cluster.
 
-11. Si quisieramos configurar Quotas de bytes leidos por cliente:
-  * Deberiamos configurar correctamente el **cliend.id**
-  * Deberiamos aplicar la configuración utilizando el script **kafka-configs.sh**
+11. Si quisiéramos configurar Quotas de bytes leidos por cliente:
+  * Deberíamos configurar correctamente el **cliend.id**
+  * Deberíamos aplicar la configuración utilizando el script **kafka-configs.sh**
   * Añadir la configuración **consumer_byte_rate**.
   * Todas las afirmaciones son correctas.
 

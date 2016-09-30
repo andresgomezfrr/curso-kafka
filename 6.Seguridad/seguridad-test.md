@@ -1,8 +1,8 @@
-1. ¿Cual de las siguientes medidas no proporciona Kafka para su securización?
+1. ¿Cúal de las siguientes medidas no proporciona Kafka para conseguir seguridad?
   * Autenticación usando SSL.
   * Encriptación usando SSL.
   * Encriptación usando HTTPS.
-  * Autorización de lecturas y estricturas.
+  * Autorización de lecturas y escrituras.
 
 2. ¿Dónde se almacena la clave privada del broker?
   * truststore del broker.
@@ -40,8 +40,8 @@
   *  **Keystore:** CA-Cert
   *  No necesitamos nada.
 
-8. Como podemos configurar en un broker varios metodos de conexión:
-  * No es posible configurar varios metodos de conexión.
+8. Como podemos configurar en un broker varios métodos de conexión:
+  * No es posible configurar varios métodos de conexión.
   * Usando la propiedad **advertised.listeners**.
   * Usando la propiedad **listeners**.
   * Usando ambas propiedades.
@@ -52,7 +52,7 @@
   * ssl.client.auth=requested
   * Ninguna de las anteriores.
 
-10. ¿Dondé se debe almacenar el certificado firmado del cliente para conseguir un correcta autenticación?
+10. ¿Dónde se debe almacenar el certificado firmado del cliente para conseguir un correcta autenticación?
   * En el truststore de los brokers.
   * En el keystore de los brokers.
   * En ambos.

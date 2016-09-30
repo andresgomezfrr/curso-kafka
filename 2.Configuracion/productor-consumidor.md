@@ -27,9 +27,9 @@ Hay varias propiedaded que resultan de interes en el productor y son las siguien
 | :------------- | :------------- |
 | batch.size      |  Número de mensajes que el productor almacenara antes de enviarlos en lotes al broker.|
 | linger.ms      |   Número máximo de espera a que se acumulen los mensajes especificados en **batch.size**, antes de enviar los mensajes.|
-| acks      | Nivel de asentimiento definidor por el productor.|
+| acks      | Nivel de asentimiento definido por el productor.|
 
-Lista completa de las configuraciones del productor: [Configuración Producor](http://kafka.apache.org/documentation.html#producerconfigs).
+Lista completa de las configuraciones del productor: [Configuración Productor](http://kafka.apache.org/documentation.html#producerconfigs).
 
 # Configuración Consumidor
 Las principales propiedades para el consumidor son las siguientes:

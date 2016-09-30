@@ -18,7 +18,7 @@
 
 4. ¿Cual es el valor ideal de páginas en la caché?
   * El valor ideal es próximo a 0.
-  * El valor ideal es prixmo a 100.
+  * El valor ideal es próximo a 100.
   * El valor debe estar oscilando continuamente entre 0 y 100.
   * Ninguna de las anteriores.
 
@@ -28,13 +28,13 @@
   * Los consumidores tienen LAG.
   * Todas las anteriores son correctas.
 
-6. Cual de las siguientes métricas nos indican que existen replicas que estan fuera de sincronia:
+6. Cual de las siguientes métricas nos indican que existen replicas que están fuera de sincronía:
   * ReplicasOutSync
   * OfflinePartitionsCount
   * UnderReplicatedPartitions
   * OutOfSyncReplicatedPartitions
 
-7. ¿Dónde deberiamos buscar la métrica **OfflinePartitionsCount**?
+7. ¿Dónde deberíamos buscar la métrica **OfflinePartitionsCount**?
   * En cualquier Broker de Kafka.
   * En algún broker que no sea un controller.
   * En el broker que es controller.
@@ -61,7 +61,7 @@
 11. ¿Qué podemos hacer descender el LAG de un grupo de consumidores?
   * Incrementar el número de particiones.
   * Levantar más instancias con el mismo grupo de consumidores.
-  * Incrementar el número de bytes cosumidos por nuestra aplicación.
+  * Incrementar el número de bytes consumidos por nuestra aplicación.
   * Todas las afirmaciones son correctas.
 
 12. ¿Qué herramienta proporciona Kafka para determinar el LAG de un consumidor?
@@ -70,7 +70,7 @@
   * kafka-topics.sh
   * kafka-console-consumer.sh
 
-13. ¿Que variable de entorno debemos exportar si queremos que el Broker configure automaticamente los flags de JMX?
+13. ¿Que variable de entorno debemos exportar si queremos que el Broker configure automáticamente los flags de JMX?
   * JMX_FLAGS
   * JMX_METRICS
   * JMX_PORT

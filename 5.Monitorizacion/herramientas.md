@@ -45,7 +45,7 @@ gem install getopt
 gem install json
 ```
 
-Cuanado hayamos instalados estas gemas, unicamente nos quedará instlar un herramienta conocida como **pcstat** que nos es de utilidad para anlizar las páginas en cache.
+Cuando hayamos instalados estas gemas, únicamente nos quedará instalar un herramienta conocida como **pcstat** que nos es de utilidad para analizar las páginas en cache.
 
 ```
 curl -L -o pcstat https://github.com/tobert/pcstat/raw/2014-05-02-01/pcstat.x86_64
@@ -94,9 +94,9 @@ Si, consumimos del topic que hemos indicado veremos mensajes como los siguientes
 ```
 
 ### Consultando LAG
-Kafka nos proporciona una herramietna para consultar el LAG que tienen los distintos consumidores. Para calcular el LAG unicamente se necesita saber el último offset de una partición y el offset actual de un grupo de consumidores para esa partición.
+Kafka nos proporciona una herramienta para consultar el LAG que tienen los distintos consumidores. Para calcular el LAG únicamente se necesita saber el último offset de una partición y el offset actual de un grupo de consumidores para esa partición.
 
-Utilizando la herramienta **kafka-consumer-groups.sh** podemos listar los grupos de consumidores actuales y solicitar de que particiones y por que offset estan cada uno de ellos.
+Utilizando la herramienta **kafka-consumer-groups.sh** podemos listar los grupos de consumidores actuales y solicitar de que particiones y por que offset están cada uno de ellos.
 
 ```
 bin/kafka-consumer-groups.sh --new-consumer --bootstrap-server localhost:9092 --list
@@ -107,7 +107,7 @@ Este comando nos muestra los grupos de consumidores, dando una salida como la si
 test-consumer-group-2
 console-consumer-69989
 ```
-Para preguntar por un grupo de consumidor en concreto deberiamos ejecutar lo siguiente:
+Para preguntar por un grupo de consumidor en concreto deberíamos ejecutar lo siguiente:
 
 ```
 bin/kafka-consumer-groups.sh --new-consumer --bootstrap-server localhost:9092 --describe --group console-consumer-69989

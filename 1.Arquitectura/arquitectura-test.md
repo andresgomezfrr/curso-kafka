@@ -1,8 +1,8 @@
 1. ¿Cuál es la utilidad de ZooKeeper en un cluster de Kafka?
   * Almacenar los mensajes enviados a Kafka.
-  * Autodescubrimiento de los porductores y consumidores.
-  * Sincronización de los brokers, elección de lider de las particiones y almacenamiento de configuración especifica.
-  * Balancear el envio de mensajes sobre los distintos Brokers.
+  * Autodescubrimiento de los productores y consumidores.
+  * Sincronización de los brokers, elección de líder de las particiones y almacenamiento de configuración especifica.
+  * Balancear el envío de mensajes sobre los distintos Brokers.
 
 2. ¿Dónde guardan los consumidores los offsets que ya han procesado?
   * Los consumidores guardan sus offsets en ZooKeeper.
@@ -10,7 +10,7 @@
   * Los consumidores no guardan sus offsets.
   * Los consumidores guardan los offsets en un topic especial.
 
-3. ¿Cuántas instancias con el mismo **group.id** se pueden tener simultaneamente?
+3. ¿Cuántas instancias con el mismo **group.id** se pueden tener simultáneamente?
   * Todas las que se quieran.
   * El número máximo es igual al número de replicas de un topic.
   * El número máximo es igual al número de particiones de un topic.
@@ -20,7 +20,7 @@
 
   * Lo envía a todas las particiones.
   * Lo envía a todas las replicas.
-  * Lo envía unicamente a la partición lider.
+  * Lo envía únicamente a la partición líder.
   * Lo envía a todos los brokers.
 
 5. Si tenemos un cluster formado por 5 brokers. ¿Cuál es el número de topics máximo que podemos tener?
@@ -33,9 +33,9 @@
 6. Si tenemos un cluster formado por 5 brokers. ¿Cuál es el número máximo de particiones que podemos tener?
 
   * Depende del número de topics.
-  * Depende del facor de replicación.
+  * Depende del factor de replicación.
   * El número de particiones no esta relacionado con el número de broker.
-  * 1 partición por cada broker, ya que los lideres tienen que estar repartidos.
+  * 1 partición por cada broker, ya que los líderes tienen que estar repartidos.
 
 7. Si tenemos un cluster formado por 5 broker. ¿Cuál es el factor de replicación máximo?
 
@@ -44,20 +44,20 @@
   * El factor de replicación no esta relacionado con el número de brokers.
   * Depende del número de las particiones que se van a replicar.
 
-8. Los mensajes en Kafka esan formado principalmente por ...
-  * Unicamente un payload, ya que es lo que se envia al broker, la clave sola es usada para particionar.
+8. Los mensajes en Kafka estan formado principalmente por ...
+  * Unicamente un payload, ya que es lo que se envía al broker, la clave sola es usada para particionar.
   * Una clave y un payload.
   * Ninguna de las anteriores es correcta.
   * Un timestamp, una clave y un payload.
 
-9. Si tenemos un topic con un factor de replicación de 3 y tenemos un total de 10 brokers. ¿Cuántos brokers podemos perder antés de no poder utilizar el topic?
-  * Deberiamos de perder los 10 brokers, ya que las replicas se mueven de un broker a otro automaticamente.
-  * Deberiamos perder los brokers donde se encuentran las replicas. Un total de 3 brokers.
-  * Deberiamos perder el broker donde se encuentra la partición leader. Un total de 1 broker.
+9. Si tenemos un topic con un factor de replicación de 3 y tenemos un total de 10 brokers. ¿Cuántos brokers podemos perder antes de no poder utilizar el topic?
+  * Deberíamos de perder los 10 brokers, ya que las replicas se mueven de un broker a otro automáticamente.
+  * Deberíamos perder los brokers donde se encuentran las replicas. Un total de 3 brokers.
+  * Deberíamos perder el broker donde se encuentra la partición leader. Un total de 1 broker.
   * Ninguna de las anteriores.
 
 10. En Kafka un offset ...
-  * Es un identificador único que indentifica a un mensaje en todo el cluster.
+  * Es un identificador único que identifica a un mensaje en todo el cluster.
   * Es único en todo el cluster y nunca se repite.
   * Identifican a un mensaje en una partición.
   * Todas son correctas.
@@ -66,11 +66,11 @@
   * La afirmación es correcta.
   * Depende del particionado que se este utilizando.
   * Depende de en que broker se encuentra la partición.
-  * La afirmación es correcta siempre que unicamente exista un cliente produciendo esa clave.
+  * La afirmación es correcta siempre que únicamente exista un cliente produciendo esa clave.
 
 12. En un cluster:
-  * Se deberian de tener tantos servidores de ZooKeeper como brokers.
-  * Los brokers pueden tener indentificadores iguales.
+  * Se deberían de tener tantos servidores de ZooKeeper como brokers.
+  * Los brokers pueden tener identificadores iguales.
   * Siempre hay que tener un número impar de brokers.
   * Ninguna es correcta.
 
@@ -82,11 +82,11 @@
 
 14. Los topics con log compaction activado son de gran utilidad para:
   * Hacer backups de caches del tipo clave/valor.
-  * Reducir el tamaño de los topics, ya que crecerian indefinidamente.
+  * Reducir el tamaño de los topics, ya que crecerían indefinidamente.
   * Ninguna de las anteriores es correcta.
   * Mejoran el rendimiento a la hora de producir mensajes debido a que esta compactado.
 
-15. Si tenemos un topic que tiene configurado el parametro **cleanup.policy=compact** y sabemos que el topic contiene los mensajes que estan en la tabla. Cuando se ejecuta la política de limpiado, ¿cuál es el resultado del topic?
+15. Si tenemos un topic que tiene configurado el parámetro **cleanup.policy=compact** y sabemos que el topic contiene los mensajes que están en la tabla. Cuando se ejecuta la política de limpiado, ¿cuál es el resultado del topic?
   * El topic es borrado por completo.
   * Se mantienen todos los valores.
   * Se quedan los offsets: 4,5,6

@@ -15,7 +15,7 @@ Una vez hemos instalado el gestor ya podemos instalar el paquete de utilidades d
 pip install kafka-tools
 ```
 
-Una vez instalado ya podriamos utilizar la herramienta **kafka-assigner**, aunque puede ser necesario tener que exportar la variable de entorno JAVA_HOME si no esta exportada.
+Una vez instalado ya podríamos utilizar la herramienta **kafka-assigner**, aunque puede ser necesario tener que exportar la variable de entorno JAVA_HOME si no esta exportada.
 
 ```
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.102-1.b14.el7_2.x86_64/jre/
@@ -78,7 +78,7 @@ Vamos a crear un topic con 30 particiones:
 bin/kafka-topics.sh --create --partitions 30 --topic test01 --replication-factor 1 --zookeeper localhost
 ```
 
-Si ejecutamos un *describe* del topic veremos que las particiones estan distribuidas entre el broker0 y el broker1.
+Si ejecutamos un *describe* del topic veremos que las particiones están distribuidas entre el broker0 y el broker1.
 
 ```
 bin/kafka-topics.sh --describe --topic test01 --zookeeper localhost
@@ -121,7 +121,7 @@ Si ejecutamos el siguiente comando:
 kafka-assigner -z openwebinars:2181 --tools-path /root/kafka_2.11-0.10.0.1/bin/ --generate -e balance --types even
 ```
 
-Nos genera un DRY-RUN de la ejeccuón que se va a realizar. Si estamos conformes con el nuevo particionado tenemos que cambiar la opcion **--generate** por **--execute**, y el comando comazará a ejecutar el reparticionado poco a poco, para que el sistema no se vea muy afectado.
+Nos genera un DRY-RUN de la ejecución que se va a realizar. Si estamos conformes con el nuevo particionado tenemos que cambiar la opción **--generate** por **--execute**, y el comando comenzara a ejecutar el reparticionado poco a poco, para que el sistema no se vea muy afectado.
 
 ```
 kafka-assigner -z openwebinars:2181 --tools-path /root/kafka_2.11-0.10.0.1/bin/ --execute -e balance --types even

@@ -1,6 +1,6 @@
 # Yahoo Kafka Manager UI
 
-En primer lugar vamos a desargar la útlima versión del software desde el enlace que se encuentra en el repositorio oficial [Kafka Manager Github](https://github.com/yahoo/kafka-manager).
+En primer lugar vamos a descargar la última versión del software desde el enlace que se encuentra en el repositorio oficial [Kafka Manager Github](https://github.com/yahoo/kafka-manager).
 
 ```
 wget https://github.com/yahoo/kafka-manager/archive/1.3.1.8.tar.gz
@@ -12,7 +12,7 @@ Una vez descargado tenemos que descomprimir el fichero y nos creada una carpeta 
 tar -xvf 1.3.1.8.tar.gz
 ```
 
-Cuando tengamos la carpeta unicamente tenemos que contruir la distribución utilizando el siguiente comando:
+Cuando tengamos la carpeta únicamente tenemos que construir la distribución utilizando el siguiente comando:
 
 ```
 ./sbt clean dist
@@ -20,7 +20,7 @@ Cuando tengamos la carpeta unicamente tenemos que contruir la distribución util
 
 **Nota:** Si no se suele usar sbt puede que la construcción dure unos minutos.
 
-Al terminar el comando nos habra contruido un fichero ZIP, que vamos a descomprimir, y entrar en la carpeta que se genera.
+Al terminar el comando nos habra construido un fichero ZIP, que vamos a descomprimir, y entrar en la carpeta que se genera.
 
 ```
 unzip target/universal/kafka-manager-1.3.1.8.zip

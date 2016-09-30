@@ -10,7 +10,7 @@
   * mvn compile
   * maven compile
 
-3. ¿Qué clase se utiliza para crear un nuevo mensaje para su envio?
+3. ¿Qué clase se utiliza para crear un nuevo mensaje para su envío?
   * ProducerRecord
   * KafkaMessage
   * KafkaRecord
@@ -34,13 +34,13 @@
   * subscribe
   * assign
 
-7. ¿Qué método de la clase *KafkaConsumer* debemos utiliar para obtener el mapa de particionado?
+7. ¿Qué método de la clase *KafkaConsumer* debemos utilizar para obtener el mapa de particionado?
   * partitionsMap
   * listTopics
   * partitions
   * listPartitions
 
-8. ¿Qué método de la clase *KafkaConsumer* debemos utilizar si queremos consumir de algunas particiones especificamanete?
+8. ¿Qué método de la clase *KafkaConsumer* debemos utilizar si queremos consumir de algunas particiones específicamente?
   * read
   * seek
   * subscribe
@@ -61,7 +61,7 @@
 11. El método **commitSync** de la clase *KafkaConsumer*:
   * Se utiliza para hacer commit manuales, de todas las particiones.
   * Se utiliza para hacer commit manuales de un offset en concreto.
-  * Realiza commits de forma sincrona antes de continuar leyendo.
+  * Realiza commits de forma sincronía antes de continuar leyendo.
   * Todas son correctas.
 
 13. ¿Qué clase debemos usar para implementar un productor que transforme de Map a Json String?

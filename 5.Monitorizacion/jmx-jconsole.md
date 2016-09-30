@@ -8,7 +8,7 @@ Si queremos activar el puerto de JMX remoto en una aplicación JAVA tenemos que 
 
 **Nota:** JMX tiene la opción de utilizar autenticación pero en nuestro caso no será necesario.
 
-Kafka verificá si existe la variable de entorno JMX_PORT, si esta definida el Broker incorpora los flags mencionados automaticamente en su ejeccución. Para definir la variable de entorno podemos ejecutar lo siguiente:
+Kafka verifica si existe la variable de entorno JMX_PORT, si esta definida el Broker incorpora los flags mencionados automáticamente en su ejecución. Para definir la variable de entorno podemos ejecutar lo siguiente:
 
 ```
 export JMX_PORT=9595

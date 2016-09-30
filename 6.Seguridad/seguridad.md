@@ -6,6 +6,7 @@
 
 El primer paso para desplegar HTTPS es generar una clave y certificado por cada maquina donde tengamos instalado un broker. Para realizar esta tarea podemos usar la herramienta de java *keytool*, generaremos la clave en un keystore temporal del cual podemos exportar y firmar posteriormente.
 
+
 ```
  keytool -keystore server.keystore.jks -alias localhost -validity 360 -genkey
 ```
@@ -55,7 +56,7 @@ Utilizando el siguiente comando generamos un CA que simplemente es una par de cl
 openssl req -new -x509 -keyout ca-key -out ca-cert -days 365
 ```
 
-La herramienta nos solicitará la siguiente informacion:
+La herramienta nos solicitará la siguiente información:
 
 ```
 Generating a 1024 bit RSA private key
@@ -85,7 +86,7 @@ Email Address []:openwebinars@openwebinars.org
 
 Este comando nos generara dos ficheros *ca-cert* y *ca-key* que utilizaremos seguidamente.
 
-El siguiente paso es añadir el certificar al almacen de confianza de los clientes para que estos confien en ese certificado.
+El siguiente paso es añadir el certificar al almacén de confianza de los clientes para que estos confíen en ese certificado.
 
 ```
 keytool -keystore server.truststore.jks -alias CARoot -import -file ca-cert
@@ -118,7 +119,7 @@ keytool -keystore server.keystore.jks -alias localhost -import -file cert-signed
 ```
 
 * keystore: Localización del keystore.
-* ca-cert: El ertificado del CA.
+* ca-cert: El certificado del CA.
 * ca-key: La clave privada del CA.
 * ca-password: Clave de paso del CA (*openwebinars*)
 * cert-file: El certificado del servido sin firmar.
@@ -126,7 +127,7 @@ keytool -keystore server.keystore.jks -alias localhost -import -file cert-signed
 
 ##### 4. Configuración de los Brokers
 
-Kafka roporciona la posibilidad para crear conexiones con multiples puertos utilizando la propiedad **listeners**.
+Kafka proporciona la posibilidad para crear conexiones con multiples puertos utilizando la propiedad **listeners**.
 
 ```
 listeners=SSL://:9102
@@ -137,7 +138,7 @@ listeners=SSL://:9102
 listeners=SSL://:9102,PLAINTEXT://:9092
 ```
 
-Tambien debemos configurar el fichero de cada broker para que utilice los almacenes de claves, añadiendo las siguientes propiedades en el fichero *server.properties*.
+También debemos configurar el fichero de cada broker para que utilice los almacenes de claves, añadiendo las siguientes propiedades en el fichero *server.properties*.
 
 ```
 ssl.keystore.location=server.keystore.jks
@@ -150,7 +151,7 @@ ssl.truststore.password=openwebinars
 security.inter.broker.protocol=SSL
 ```
 
-Una forma rapida de verificar si funciona correcamente es utilizar el comando:
+Una forma rapida de verificar si funciona correctamente es utilizar el comando:
 
 ```
 openssl s_client -debug -connect localhost:9102 -tls1
@@ -160,13 +161,13 @@ Que nos muestrará el certificado del servidor.
 
 ##### 5. Configuración clientes de Kafka
 
-Una vez configurado los brokers es hora de configurar los clietnes para que cifren la información, para ello debemos crear un truststore para los clientes donde importaremos el certiciado de la CA.
+Una vez configurado los brokers es hora de configurar los clientes para que cifren la información, para ello debemos crear un truststore para los clientes donde importaremos el certificado de la CA.
 
 ```
 keytool -keystore client.truststore.jks -alias CARoot -import -file ca-cert
 ```
 
-Tambien, añadiremos la configuración en los ficheros de configuración del consumidor y del productor.
+También, añadiremos la configuración en los ficheros de configuración del consumidor y del productor.
 
 ```
 security.protocol=SSL
@@ -178,7 +179,7 @@ ssl.truststore.password=openwebinars
 
 Si queremos habilitar la autenticación entre los clientes y los brokers debemos configurar la propiedad **ssl.client.auth=required** y seguir los siguientes pasos:
 
-1. Debemos generar un keystore en el cliente y generar un certifiado propio, como hicimos en el primer punto.
+1. Debemos generar un keystore en el cliente y generar un certificado propio, como hicimos en el primer punto.
 ```
 keytool -keystore client.keystore.jks -alias localhost -validity 360 -genkey
 ```
