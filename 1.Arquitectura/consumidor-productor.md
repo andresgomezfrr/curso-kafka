@@ -1,6 +1,6 @@
 # Productor y Consumidor
 
-Una vez ya tenemos nuestros topics creado es hora de producir algún mensaje en el y comprobar que el sistema funciona completamente. Para enviar mensajes vamos a utilizar las herramientas que vienen con el paquete de Kafka que proporciona un consumidor y productor de consola.
+Una vez ya tenemos nuestros topics creados, es hora de producir algún mensaje en él y comprobar que el sistema funciona completamente. Para enviar mensajes vamos a utilizar las herrameientas que vienen con el paquete de Kafka que porporciona un consumidor y producor de consola.
 
 ## Productor
 El productor de consola deja abierta una shell, donde podremos escribir mensajes para que los envie a Kafka.
@@ -13,7 +13,7 @@ Este comando nos permite enviar mensajes con clave a Kafka. Usando el símbolo i
 2,mundo
 clave,mensaje
 ```
-Los mensajes se da por terminado y se envia cuando se pulsa enter.
+Los mensajes se dan por terminados y se envían cuando se pulsa enter.
 
 * **Nota:** Si intentamos enviar un mensaje sin la ',' el productor fallará al no poder distinguir la clave del valor.
 
@@ -22,7 +22,11 @@ Igual que el productor usaremos un script que viene proporcionado con Kafka:
 ```
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --property print.key=true --topic nuevo-topic  --new-consumer --consumer.config config/consumer.properties
 ```
+<<<<<<< HEAD
 Una vez ejecutado la shell se quedará abierta y empezaremos a ver los mensajes que enviamos por el productor. Hemos utilizado la opción **--consumer.config config/consumer.properties** para poder indicar un grupo de consumidor. Si mostramos el contenido del fichero:
+=======
+Una vez ejecutado, la shell se quedará abierta y empezaremos a ver los mensajes que enviamos por el productor. Hemos utilizado la opción **--consumer.config config/consumer.properties** para poder indicar un grupo de consumidor. Si mostramos el contenido del fichero:
+>>>>>>> ab5ddfea83ac2c662bb31feb7eac07378a275bd8
 
 ```
 cat config/consumer.properties
@@ -59,4 +63,4 @@ group.id=test-consumer-group
 
 Podemos ver que se indica un group.id con valor de **test-consumer-group**.
 
-* **Nota:** Hemos utilizado la opción **--new-consumer** ya que hemos utilizado la nueva API de Kafka introducida en la versión 0.9.0. El consumidor aun permite utilizar el API antigua.
+* **Nota:** Hemos utilizado la opción **--new-consumer** ya que hemos utilizado la nueva API de Kafka introducida en la versión 0.9.0. El consumidor aun permite utilizar la API antigua.

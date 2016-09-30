@@ -4,7 +4,7 @@
   * kafka-clients
   * apache-kafka
 
-2. Cuando se crea un JAR con un proyecto con maven utilizamos el comando:
+2. Cuando se crea un JAR con un proyecto con maven, utilizamos el comando:
   * mvn package
   * maven package
   * mvn compile

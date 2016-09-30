@@ -44,8 +44,13 @@
   * El factor de replicación no esta relacionado con el número de brokers.
   * Depende del número de las particiones que se van a replicar.
 
+<<<<<<< HEAD
 8. Los mensajes en Kafka estan formado principalmente por ...
   * Unicamente un payload, ya que es lo que se envía al broker, la clave sola es usada para particionar.
+=======
+8. Los mensajes en Kafka esan formado principalmente por ...
+  * Únicamente un payload, ya que es lo que se envía al broker, la clave sola es usada para particionar.
+>>>>>>> ab5ddfea83ac2c662bb31feb7eac07378a275bd8
   * Una clave y un payload.
   * Ninguna de las anteriores es correcta.
   * Un timestamp, una clave y un payload.

@@ -1,7 +1,8 @@
 # Configuración de Topic
 
-## Configuración particiones y replicas
+## Configuración particiones y réplicas
 A la hora de crear un topic nuevo podemos indicar el número de particiones y el factor de replicación.
+
 ```
 bin/kafka-topics.sh --zookeeper localhost:2181 --create --topic my-topic --partitions 1 --replication-factor 1
 ```
@@ -18,7 +19,8 @@ Aunque no es tan sencillo incrementar el factor de replicación, para hacerlo de
 ```json
 {"version":1, "partitions":[{"topic":"my-topic", "partition":0, "replicas":[1,2,3]}]}
 ```
-Mediante este fichero indicamos que para el topic *my-topic* queremos que su partición 0 se encuentre en los brokers con ID: 1,2,3; es decir conseguiremos un factor de replicación de 3. Kafka se encarga automáticamente de decidir que partición es la líder.
+
+Mediante este fichero indicamos que para el topic *my-topic* queremos que su partición 0 se encuentre en los brokers con ID: 1,2,3; es decir conseguiríamos un factor de replicación de 3. Kafka se encarga automáticamente de decidir que partición es la líder.
 
 2. Ejecutar el siguiente comando para aplicar la configuración deseada:
 ```
@@ -51,7 +53,7 @@ Finalmente, también existe la posibilidad de borrar una configuración aplicada
 bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic my-topic --delete-config max.message.bytes
 ```
 
-* Una vez ejecutado el valor el topic utilizara la valor definido en el fichero de configuración del broker ```server.properties``` o de no estar definida utilizará el valor por defecto.
+* Una vez ejecutado el valor el topic utilizará el valor definido en el fichero de configuración del broker ```server.properties``` o de no estar definida utilizará el valor por defecto.
 
 Algunas configuraciones más interesantes que se pueden aplicar por topic son las siguientes:
 

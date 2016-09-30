@@ -14,7 +14,7 @@ Kafka verifica si existe la variable de entorno JMX_PORT, si esta definida el Br
 export JMX_PORT=9595
 ```
 
-Si queremos que el Broker exponga en puerto en una dirección IP concreta debemos añadir el flag:
+Si queremos que el Broker exponga el puerto en una dirección IP concreta debemos añadir el flag:
 
 ```
 -Djava.rmi.server.hostname=192.168.1.40

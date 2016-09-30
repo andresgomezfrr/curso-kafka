@@ -4,7 +4,7 @@
 
 ##### 1. Generación de una clave SSL y certificado por cada Kafka Broker
 
-El primer paso para desplegar HTTPS es generar una clave y certificado por cada maquina donde tengamos instalado un broker. Para realizar esta tarea podemos usar la herramienta de java *keytool*, generaremos la clave en un keystore temporal del cual podemos exportar y firmar posteriormente.
+El primer paso para desplegar HTTPS es generar una clave y certificado por cada máquina donde tengamos instalado un broker. Para realizar esta tarea podemos usar la herramienta de java *keytool*, generaremos la clave en un keystore temporal del cual podemos exportar y firmar posteriormente.
 
 
 ```
@@ -50,7 +50,7 @@ keytool -list -v -keystore server.keystore.jks
 
 La CA es la responsable de firmar los certificados, la firma del certificado debe realizarse por cada maquina del cluster.
 
-Utilizando el siguiente comando generamos un CA que simplemente es una par de clave publica/privada y un certificado que nos permitiran firmar otros certificados.
+Utilizando el siguiente comando generamos un CA que simplemente es una par de clave publica/privada y un certificado que nos permitirán firmar otros certificados.
 
 ```
 openssl req -new -x509 -keyout ca-key -out ca-cert -days 365

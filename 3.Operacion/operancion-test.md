@@ -6,7 +6,7 @@
 
 2. ¿Cuál es el uso del comando **kafka-mirror-maker.sh**?
   * Copiar un topic en otro.
-  * Crear replicas de una partición.
+  * Crear réplicas de una partición.
   * Copiar datos entre clusters.
   * Copiar datos de un broker a otro.
 
@@ -29,7 +29,7 @@
   * Todas las anteriores son correctas.
 
 6. ¿Cuál es la utilidad de la propiedad **controlled.shutdown.enable**?
-  * Evitar perdidas de datos.
+  * Evitar pérdidas de datos.
   * Reducir el tiempo de no disponibilidad de las particiones.
   * Escribir los mensajes pendientes al disco y asegurar que otro nodo obtiene el líder de sus particiones.
   * Todas las afirmaciones son correctas.

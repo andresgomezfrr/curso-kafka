@@ -1,4 +1,4 @@
-# Configuración Kafka Broker 
+# Configuración Kafka Broker
 
 En esta lección vamos a hablar de los distintos parámetros de configuración que se pueden aplicar al Broker de Kafka. El fichero utilizado para configurar el servicio de Kafka es ```server.properties```
 

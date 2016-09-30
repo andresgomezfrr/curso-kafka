@@ -1,6 +1,6 @@
 # ZooKeeper y Kafka
 
-Una vez vista la arquitectura básica de ZooKeeper y Kafka vamos a iniciar ambos servicios y ver como Kafka se registra en ZooKeeper.
+Una vez vista la arquitectura básica de ZooKeeper y Kafka, vamos a iniciar ambos servicios y ver como Kafka se registra en ZooKeeper.
 
 1. En primer lugar vamos a descargar la versión estable de Apache ZooKeeper y a descomprimirla.
 ```
@@ -45,7 +45,7 @@ Si se desea ejecutar en segundo plano se puede añadir la opción -daemon:
 ```
 bin/kafka-server-start.sh -daemon config/server.properties
 ```
-  * **Nota:** Por defecto la configuración de Kafka busca el servidor de ZooKeper en localhost:2181, si hemos levantado el servicio de Kafka y ZooKeeper en maquinas separadas deberemos editar el fichero ```config/server.properties```
+  * **Nota:** Por defecto la configuración de Kafka busca el servidor de ZooKeper en localhost:2181, si hemos levantado el servicio de Kafka y ZooKeeper en máquinas separadas deberemos editar el fichero ```config/server.properties```
 
 3. Para verificar que el servidor esta corriendo y se ha registrado correctamente en ZooKeeper podemos utilizar la utilidad **zkCli.sh**. Veremos que efectivamente existe un Broker con identificador 0, es el valor que viene en el fichero por defecto.
 ```

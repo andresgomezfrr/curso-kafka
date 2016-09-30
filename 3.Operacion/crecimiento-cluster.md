@@ -1,10 +1,10 @@
 # Crecimiento del Cluster
 
-En esta sección vamos a tratar como expandir un cluster de Kafka ya formado para distribuir la carga y de esta forma conseguir un mayor rendimiento.
+En esta sección vamos a tratar cómo expandir un cluster de Kafka ya formado para distribuir la carga y de esta forma conseguir un mayor rendimiento.
 
-Para hacer crecer un cluster únicamente tenemos que añadir un nuevo broker con un nuevo identificador único. Este nuevo broker se unirá al cluster utilizando ZooKeeper, pero no empezara a recibir datos hasta que le asignemos particiones. Utilizaremos la herramienta ```kafka-reassign-partitions.sh```para esta operación.
+Para hacer crecer un cluster solamente tenemos que añadir un nuevo broker con un nuevo identificador único. Este nuevo broker se unirá al cluster utilizando ZooKeeper, pero no empezara a recibir datos hasta que le asignemos particiones. Utilizaremos la herramienta ```kafka-reassign-partitions.sh```para esta operación.
 
-Mediante esta herramienta podemos incrementar el número de replicas que queremos para una partición y la distribución de en que broker queremos asignar cada replica. Esta operación vimos como funcionaba anteriormente en la sección de *Configuración* en la sesión de *Topics*, y mediante un fichero en formato JSON podíamos indicar donde asignábamos cada replica.
+Mediante esta herramienta podemos incrementar el número de réplicas que queremos para una partición y la distribución de en qué broker queremos asignar cada réplica. Esta operación vimos cómo funcionaba anteriormente en la sección de *Configuración* en la sesión de *Topics*, y mediante un fichero en formato JSON podíamos indicar donde asignabamos cada replica.
 
 ```json
 {"version":1, "partitions":[{"topic":"my-topic", "partition":0, "replicas":[1,2,3]}]}
