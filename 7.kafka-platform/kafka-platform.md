@@ -1,0 +1,3 @@
+# Kafka Platform
+
+[Introduction To Streaming Data and Stream Processing with Apache Kafka](https://vimeo.com/184588207/067e3f3e09?mkt_tok=eyJpIjoiTmpNNE1EazBNalJoTUdKbSIsInQiOiJlNzNWOWMxQlZUenRzU0VqQ0l2SE5YVW9uN0tqcXhHdWZucHdwZHhieFVQR0U2WmRuNjJZVEhiVW1jR0JJVFl3U0FiQ1l4QkVOQlwvaEtzbVEzQXpiXC9Ra3BBb0Flc1pDNzlZWlBhanpPbmcwPSJ9)
